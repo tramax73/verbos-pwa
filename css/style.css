@@ -1,0 +1,122 @@
+/*
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+ */
+
+ .bottom-bar {
+   /* display: flex;
+   flex-flow: row wrap;
+   align-items: center; */
+   border-radius: 5px;
+   padding: 20px;
+   border: 1px solid #ddd;
+
+ }
+
+ .bottom-bar input[type=text] {
+   vertical-align: middle;
+   margin: 5px 10px 5px 0;
+   padding: 10px;
+   background-color: #fff;
+   border: 1px solid #ddd;
+ }
+
+ .bottom-bar input {
+   padding: 10px 20px;
+   border: 1px solid #ddd;
+   color: white;
+   cursor: pointer;
+      margin: 4px 5px;
+ }
+
+ .bottom-bar input#bReload {
+   background-color: rgb(113, 159, 107);
+ }
+
+ .bottom-bar input#bRegen {
+   color: rgb(58, 187, 75);
+   border: 1px solid rgb(58, 187, 75);
+ }
+
+.form-inline {
+  /* display: flex;
+  flex-flow: row wrap;
+  align-items: center; */
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 5px;
+}
+
+
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input[type=text] {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline input[type=button] {
+  padding: 10px 20px;
+  background-color: #e7e7e7;
+  border: 1px solid #ddd;
+  color: black;
+  cursor: pointer;
+      margin: 4px 5px;
+}
+
+.form-inline input[type=reset] {
+  padding: 10px 20px;
+  background-color: #e1e1e1;
+  border: 1px solid #ddd;
+  color: black;
+  cursor: pointer;
+        margin: 4px 5px;
+}
+.form-inline input[type=button]:hover {
+  background-color: #e8e8e8;
+}
+
+@media (max-width: 200px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* PWA */
+
+body {
+  font-family: sans-serif;
+}
+
+/* Make content area fill the entire browser window */
+html,
+.fullscreen {
+  display: flex;
+  height: 100%;
+  margin: 5;
+  padding: 5;
+  width: 90%;
+}
+
+/* Center the content in the browser window */
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+}
