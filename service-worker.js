@@ -1,7 +1,7 @@
 var cacheName = 'verbos-pwa';
 var filesToCache = [
   '/',
-  '/verbos-pwa.html',
+  '/index.html',
   '/css/style.css',
   '/js/main.js',
   '/js/funcs.js',
