@@ -1,11 +1,11 @@
 var cacheName = 'verbos-pwa';
 var filesToCache = [
-  '',
-  'index.html',
-  'css/style.css',
-  'js/main.js',
-  'js/funcs.js',
-  'js/json-data.js'
+  '/verbos-pwa/',
+  '/verbos-pwa/index.html',
+  '/verbos-pwa/css/style.css',
+  '/verbos-pwa/js/main.js',
+  '/verbos-pwa/js/funcs.js',
+  '/verbos-pwa/js/json-data.js'
 ];
 
 /* Start the service worker and cache all of the app's content */
