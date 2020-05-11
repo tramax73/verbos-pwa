@@ -195,12 +195,28 @@ function updateVerbos(n) {
 
     contentDiv.innerHTML += '<input type="button" value="CORREGIR" onclick="compute(this.form)">';
     contentDiv.innerHTML += '<input value="reajustar" type="reset">';
-    contentDiv.innerHTML += 'Score: <input type="text" name="result" size="10" value="">';
+    contentDiv.innerHTML += 'score: <input type="text" name="result" size="10" value="">';
+    contentDiv.innerHTML += '<br/>';
+    contentDiv.innerHTML += '<br/>';
+    contentDiv.innerHTML += '<br/>';
 
-    contentDiv = document.getElementById('bottom-bar');
+
+
+    document.getElementById("dropup").innerHTML = "";
+
+    contentDiv = document.getElementById("navbar") ;
     contentDiv.innerHTML = '';
-    contentDiv.innerHTML += '<input type="button" id="bReload" value="de inicio" onclick="location.reload()">';
-    contentDiv.innerHTML += '<input type="button" id="bRegen" value="regenerar" onclick="'+'updateVerbos('.concat(n).concat(')')+'">';
+    contentDiv.innerHTML += '<a href="#" class="active" onclick="location.reload()">⌂</a>';
+    contentDiv.innerHTML += '<a href="#"  onclick="'+'updateVerbos('.concat(n).concat(')')+'">⟳</a>';
+
+    contentDiv.innerHTML += '<div class="navbar-right"><a href="javascript:insertChar(241);">ñ</a></div>';
+    contentDiv.innerHTML += '<div class="navbar-right"><a href="javascript:insertChar(252);">ü</a></div>';
+    contentDiv.innerHTML += '<div class="navbar-right"><a href="javascript:insertChar(250);">ú</a></div>';
+    contentDiv.innerHTML += '<div class="navbar-right"><a href="javascript:insertChar(243);">ó</a></div>';
+    contentDiv.innerHTML += '<div class="navbar-right"><a href="javascript:insertChar(237);">í</a></div>';
+    contentDiv.innerHTML += '<div class="navbar-right"><a href="javascript:insertChar(233);">é</a></div>';
+    contentDiv.innerHTML += '<div class="navbar-right"><a href="javascript:insertChar(225);">á</a></div>';
+
 
     myFFC();
   }
