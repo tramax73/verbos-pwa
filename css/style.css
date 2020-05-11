@@ -109,7 +109,7 @@ html,
   text-align: center;
   padding: 14px 10px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .navbar a:hover {
@@ -137,11 +137,22 @@ html,
 /* dropbtn */
 
 .dropbtn {
+  display: inline-block;
+  font-weight: 400;
+  cursor: pointer;
   background-color: lightcoral;
   color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  outline: 0;
+  transition: .15s ease-in-out;
 }
 
 .dropup {
@@ -149,30 +160,58 @@ html,
   display: inline-block;
 }
 
-.dropup-content {
-  display: none;
-  position: absolute;
-  background-color: crimson;
-  min-width: 160px;
-  bottom: 50px;
-  z-index: 1;
+.dropbtn:hover {
+    background-color: #0069d9;
 }
 
-.dropup-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+/* Dropup menu (Hidden by Default) */
+.dropup-menu {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    min-width: 160px;
+    padding: 8px 0;
+    background: white;
+    box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-.dropup-content a:hover {background-color: MistyRose}
-
-.dropup:hover .dropup-content {
-  display: block;
+/* Links inside the dropup menu */
+.dropup-menu a {
+    color: #000;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-.dropup:hover .dropbtn {
-  background-color: indianred;
+/* Change bg-color of dropup links on hover */
+.dropup-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Caret */
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-bottom: 6px dashed;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+/* Dropup menu Header */
+.dropup-menu .dropup-header {
+    color: #777;
+    font-size: .8rem;
+    padding: 8px 16px;
+}
+
+.show {
+    display: block;
 }
 
 

@@ -44,14 +44,37 @@
         </div>
       </div>
 
+      <div class="dropup">
+          <button class="dropbtn">Dropup Button
+              <span class="caret"></span>
+          </button>
+          <div class="dropup-menu">
+              <div class="dropup-header">Dropup header 1</div>
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">Bootstrap</a>
+              <div class="dropup-header">Dropup header 2</div>
+              <a href="#">Javascript</a>
+          </div>
+      </div>
+
   </form>
 
   <!-- Mirrored from personal.colby.edu/~bknelson/SLC/gerund.php by HTTrack Website Copier/3.x [XR&CO 2014], Thu, 04 Jun 2015 14:27:10 GMT -->
 
 </div>
 
+<!-- dropup js -->
+<script>
+  let dropup = document.querySelector(".dropup");
+  let dropupMenu = document.querySelector(".dropup-menu");
 
+  dropup.onclick = function() {
+      dropupMenu.classList.toggle("show");
+  }
+</script>
 
+<!-- navbar js -->
 <div class="navbar" id="navbar">
   <a style="cursor:pointer" onclick="openNav()">&#9776; </a>
 </div>
