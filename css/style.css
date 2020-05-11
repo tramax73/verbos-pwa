@@ -67,6 +67,7 @@ html, body, html * {
     -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
     -webkit-overflow-scrolling: auto;
+    -webkit-user-select:none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     *::-webkit-scrollbar {
      width: 0px;
     }
@@ -79,7 +80,6 @@ html,
   display: flex;
   height: 100%;
   width: 100%;
-  -webkit-user-select:none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
 }
 
 /* Center the content in the browser window */
