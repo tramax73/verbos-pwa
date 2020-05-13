@@ -158,6 +158,7 @@ function build(len) {
 
 function updateVerbos(n) {
 
+console.log("updateVerbos");
 
   contentDiv = document.getElementById('content');
   contentDiv.innerHTML = '';

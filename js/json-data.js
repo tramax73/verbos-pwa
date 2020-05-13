@@ -1,3 +1,5 @@
+console.log("set jsonData");
+
 const jsonData = [
   { verb: 'amar (ind)', s1: 'amo', s2: 'amas', s3: 'ama', p1: 'amamos', p2: 'amáis', p3: 'aman' },
   { verb: 'andar (ind)', s1: 'ando', s2: 'andas', s3: 'anda', p1: 'andamos', p2: 'andáis', p3: 'andan' },
