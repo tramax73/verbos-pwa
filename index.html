@@ -26,8 +26,8 @@
 <div class="container">
 
   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="javascript:alert('estudiad verbos!')" onclick="closeNav();">acerca...</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav(); return false;">&times;</a>
+    <a href="javascript:alert('estudiad verbos!')" onclick="closeNav(); return false;">acerca...</a>
   </div>
 
   <form name="uno"  autocomplete="off">
@@ -62,6 +62,8 @@ console.log("set dropupMenu");
 
 function dropUpM() {
       dropupMenu.classList.toggle("show");
+      if (document.getElementById("mySidenav").style.width == "250px")
+        document.getElementById("mySidenav").style.width = "0"; /* close mySidenav if needed */
 }
 </script>
 
