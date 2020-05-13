@@ -34,7 +34,7 @@
 
     <div id="content" class="form-inline" style="background-color: white" ></div> <!-- il mio div JS, placeholder -->
 
-      <div class="dropup" id="dropup" onclick='document.querySelector(".dropup-menu").classList.toggle("show");'>
+      <div class="dropup" id="dropup" onclick='dropUpM()'>
           <button class="dropbtn">empezar
               <span class="caret"></span>
           </button>
@@ -52,7 +52,7 @@
 
 </div>
 
-<!-- dropup js
+<!-- dropup js -->
 
 <script>
 console.log("set dropupMenu");
@@ -60,13 +60,14 @@ console.log("set dropupMenu");
   let dropup = document.querySelector(".dropup");
   let dropupMenu = document.querySelector(".dropup-menu");
 
- /*
+function dropUpM() {
+
   dropup.onclick = function() {
       dropupMenu.classList.toggle("show");
   }
- */
+}
 </script>
--->
+
 
 
 
