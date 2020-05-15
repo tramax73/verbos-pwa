@@ -27,5 +27,4 @@ self.addEventListener('fetch', function(e) {
   );
 });
 // VERSION: 1.1
-// build
-// 
+// BUILD:       72
