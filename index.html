@@ -82,10 +82,17 @@ function dropUpM() {
   <a style="cursor:pointer" onclick="openNav()">&#9776; </a>
 </div>
 
+<!-- snackbar per gli aggiornamenti -->
+<div id="snackbar">A new version of this app is available. Click <a id="reload">here</a> to update.</div>
 
 
 
-<!-- xxxx -->
+<script>
+function showUpdateBar() {
+  let snackbar = document.getElementById('snackbar');
+  snackbar.className = 'show';
+}
+</script>
 
 <!--JavaScript at end of body for optimized loading-->
 
