@@ -26,3 +26,4 @@ self.addEventListener('fetch', function(e) {
     })
   );
 });
+// VERSION: 1.1
