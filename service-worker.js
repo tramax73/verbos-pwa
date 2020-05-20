@@ -27,8 +27,8 @@ self.addEventListener('fetch', function(e) {
   );
 });
 
-self.addEventListener('message', event => {
-  if (event.data === 'skipWaiting') {
+self.addEventListener('message', function(event)  {
+  if (event.data.action === 'skipWaiting') {
     self.skipWaiting();
   }
 });
@@ -44,4 +44,4 @@ self.addEventListener('notificationclick', function(event) {
   );
 });
 // VERSION: 1.1
-// BUILD: 94
+// BUILD: 95
