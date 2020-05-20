@@ -27,6 +27,12 @@ self.addEventListener('fetch', function(e) {
   );
 });
 
+self.addEventListener('message', event => {
+  if (event.data === 'skipWaiting') {
+    self.skipWaiting();
+  }
+});
+
 // push da implementare
 self.addEventListener('notificationclick', function(event) {
   console.log('[Service Worker] Notification click Received.');
@@ -38,4 +44,4 @@ self.addEventListener('notificationclick', function(event) {
   );
 });
 // VERSION: 1.1
-// BUILD: 89
+// BUILD: 90
