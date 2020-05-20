@@ -14,6 +14,12 @@ self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open(cacheName).then(function(cache) {
       return cache.addAll(filesToCache);
+    }).then(function() {
+      // `skipWaiting()` forces the waiting ServiceWorker to become the
+      // active ServiceWorker, triggering the `onactivate` event.
+      // Together with `Clients.claim()` this allows a worker to take effect
+      // immediately in the client(s).
+      return self.skipWaiting();
     })
   );
 });
@@ -27,11 +33,6 @@ self.addEventListener('fetch', function(e) {
   );
 });
 
-self.addEventListener('message', function(event)  {
-  if (event.data.action === 'skipWaiting') {
-    self.skipWaiting();
-  }
-});
 
 // push da implementare
 self.addEventListener('notificationclick', function(event) {
