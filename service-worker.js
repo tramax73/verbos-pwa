@@ -27,4 +27,4 @@ self.addEventListener('fetch', function(e) {
   );
 });
 // VERSION: 1.1
-// BUILD: 84
+// BUILD: 86
