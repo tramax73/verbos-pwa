@@ -30,7 +30,8 @@ window.onload = () => {
     }
 
     function onUpdateFound() {
-          console.log("code to reload here");
+          self.skipWaiting();
+          console.log("reloding serviceWorker ...");
     }
 
 
