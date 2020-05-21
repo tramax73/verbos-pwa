@@ -31,7 +31,6 @@ window.onload = () => {
 
     function onUpdateFound() {
           console.log("reloding serviceWorker ...");
-          location.reload();
     }
 
 
