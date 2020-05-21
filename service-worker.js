@@ -39,4 +39,4 @@ self.addEventListener('notificationclick', function(event) {
   );
 });
 // VERSION: 1.1
-// BUILD: 105
+// BUILD: 106
