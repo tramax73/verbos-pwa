@@ -29,4 +29,4 @@ self.addEventListener('fetch', function(e) {
 
 
 // VERSION: 1.1
-// BUILD: 109
+// BUILD: 110
