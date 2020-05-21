@@ -28,15 +28,5 @@ self.addEventListener('fetch', function(e) {
 });
 
 
-// push da implementare
-self.addEventListener('notificationclick', function(event) {
-  console.log('[Service Worker] Notification click Received.');
-
-  event.notification.close();
-
-  event.waitUntil(
-     clients.openWindow('https://developers.google.com/web/')
-  );
-});
 // VERSION: 1.1
-// BUILD: 106
+// BUILD: 108
