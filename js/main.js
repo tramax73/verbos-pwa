@@ -29,8 +29,8 @@ window.onload = () => {
                   console.log('Install complete. Triggering update prompt.');
 
                   if (navigator.serviceWorker.controller) {
-                    let notification = document.getElementById('snackbar ');
-                    notification .className = 'show';
+                    let notification = document.getElementById('snackbar');
+                    notification.className = 'show';
                   }
                 }
               });
