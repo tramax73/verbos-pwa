@@ -27,6 +27,12 @@ self.addEventListener('fetch', function(e) {
   );
 });
 
+/* handle skipWaiting */
+self.addEventListener('message', function (event) {
+  if (event.data.action === 'skipWaiting') {
+    self.skipWaiting();
+  }
+});
 
 // VERSION: 1.1
 // BUILD: 110

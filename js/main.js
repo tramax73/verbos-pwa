@@ -1,6 +1,13 @@
 window.onload = () => {
   'use strict';
 
+  let installingWorker;
+
+  // The click event on the notification
+  document.getElementById('reload').addEventListener('click', function(){
+    installingWorker.postMessage({ action: 'skipWaiting' });
+  });
+
   if('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./service-worker.js')
         .then(registration => {
@@ -20,7 +27,11 @@ window.onload = () => {
               installingWorker.addEventListener('statechange', () => {
                 if(installingWorker.state === 'installed') {
                   console.log('Install complete. Triggering update prompt.');
-                  onUpdateFound();
+
+                  if (navigator.serviceWorker.controller) {
+                    let notification = document.getElementById('snackbar ');
+                    notification .className = 'show';
+                  }
                 }
               });
             });
@@ -29,10 +40,13 @@ window.onload = () => {
         .catch(e => console.log(e));
     }
 
-    function onUpdateFound() {
-          console.log("reloding serviceWorker ...");
-          showUpdateBar();
-    }
-
+    let refreshing;
+    // The event listener that is fired when the service worker updates
+    // Here we reload the page
+    navigator.serviceWorker.addEventListener('controllerchange', function () {
+     if (refreshing) return;
+     window.location.reload();
+     refreshing = true;
+    });
 
 }
