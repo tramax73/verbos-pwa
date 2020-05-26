@@ -1,13 +1,6 @@
 window.onload = () => {
   'use strict';
 
-  let installingWorker;
-
-  // The click event on the notification
-  document.getElementById('reload').addEventListener('click', function(){
-    installingWorker.postMessage({ action: 'skipWaiting' });
-  });
-
   if('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./service-worker.js')
         .then(registration => {
@@ -20,6 +13,12 @@ window.onload = () => {
             registration.addEventListener('updatefound', () => {
               console.log('Update found. Waiting for install to complete.');
               const installingWorker = registration.installing;
+
+
+              // The click event on the notification
+              document.getElementById('reload').addEventListener('click', function(){
+                installingWorker.postMessage({ action: 'skipWaiting' });
+              });
 
               // Watch for changes to the worker's state. Once it is "installed", our cache
               // has been updated with our new files, so we can prompt the user to instantly
