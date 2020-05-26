@@ -35,4 +35,4 @@ self.addEventListener('message', function (event) {
 });
 
 // VERSION: 1.2
-// BUILD: 131
+// BUILD: 132

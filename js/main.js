@@ -40,7 +40,7 @@ window.onload = () => {
               // Here we reload the page
               navigator.serviceWorker.addEventListener('controllerchange', function () {
                if (refreshing) return;
-               window.location.reload();
+               showUpdateBar();
                refreshing = true;
               });
 
