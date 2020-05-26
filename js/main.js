@@ -15,10 +15,6 @@ window.onload = () => {
               const installingWorker = registration.installing;
 
 
-              // The click event on the notification
-              document.getElementById('reload').addEventListener('click', function(){
-                installingWorker.postMessage({ action: 'skipWaiting' });
-              });
 
               // Watch for changes to the worker's state. Once it is "installed", our cache
               // has been updated with our new files, so we can prompt the user to instantly
@@ -33,19 +29,25 @@ window.onload = () => {
                   }
                 }
               });
+
+              let refreshing;
+              // The event listener that is fired when the service worker updates
+              // Here we reload the page
+              navigator.serviceWorker.addEventListener('controllerchange', function () {
+               if (refreshing) return;
+               window.location.reload();
+               refreshing = true;
+              });
+
+              // The click event on the notification
+              document.getElementById('reload').addEventListener('click', function(){
+                installingWorker.postMessage({ action: 'skipWaiting' });
+              });
+
             });
           }
         })
         .catch(e => console.log(e));
     }
-
-    let refreshing;
-    // The event listener that is fired when the service worker updates
-    // Here we reload the page
-    navigator.serviceWorker.addEventListener('controllerchange', function () {
-     if (refreshing) return;
-     window.location.reload();
-     refreshing = true;
-    });
 
 }
