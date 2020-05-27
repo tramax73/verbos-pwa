@@ -135,10 +135,19 @@ function closeNav() {
                 // new update available
 
                 // clear cache first
-                // setTimeout(() => document.location.reload(true), 2000);
-                caches.keys().then(keys => {
-                  keys.forEach(key => caches.delete(key));
-                });
+                const l = console.log
+                if ('caches' in window) {
+                  l('CacheStorage is present for this app');
+                  caches.keys().then(function(cacheArray) {
+                    l(cacheArray); // just print the list of CacheStorage names to the console
+                    // for each cache, try and delete it
+                    cacheArray.forEach(function(cache) {
+                      caches.delete(cache).then((bool) => {
+                        l('deleted cache: '+cache); // print the successful deletion to console
+                      }).catch((err) => {l(err)});
+                    });
+                  });
+                }
 
                 // show update toast
                 showUpdateBar();
