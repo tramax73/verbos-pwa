@@ -46,5 +46,5 @@ self.addEventListener('fetch', function (event) {
 
 
 
-// VERSION: 1.3 bet
-// const buildNo 171
+// VERSION: 1.3
+// const buildNo 172
