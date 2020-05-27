@@ -64,7 +64,7 @@
 
 function acerca() {
     var condition = navigator.onLine ? "online" : "offline";
-    alert('estudiad verbos!\n\njsonData_rel: '+jsonData_rel+'\n\nstatus: '+condition);
+    alert('estudiad verbos!\n\njsonData_rel: '+jsonData_rel+'\n\nstatus: '+condition+'\n\nbuild: '+buildNo);
 }
 
 function dropUpM() {
@@ -156,7 +156,7 @@ function closeNav() {
 
       // window.location.reload();
       setTimeout(() => document.location.reload(true), 2000);
-      
+
       refreshing = true;
     });
   }
