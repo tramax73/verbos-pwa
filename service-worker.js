@@ -40,5 +40,5 @@ self.addEventListener('fetch', function (event) {
 
 
 
-// VERSION: 1.3 alpha
-// BUILD: 146
+// VERSION: 1.3 beta
+// BUILD: 147
