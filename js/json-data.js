@@ -1,4 +1,4 @@
-const jsonData_rel = "v20200521g";
+const jsonData_rel = "v20200521h";
 
 const jsonData = [
   { verb: 'amar (ind)', s1: 'amo', s2: 'amas', s3: 'ama', p1: 'amamos', p2: 'amáis', p3: 'aman' },
