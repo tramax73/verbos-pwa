@@ -136,9 +136,9 @@ function closeNav() {
 
                 // clear cache first
             //    setTimeout(() => document.location.reload(true), 2000);
-            //    caches.keys().then(keys => {
-            //      keys.forEach(key => caches.delete(key));
-            //    }
+                caches.keys().then(keys => {
+                  keys.forEach(key => caches.delete(key));
+                }
 
                 // show update toast
                 showUpdateBar();
