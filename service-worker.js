@@ -22,6 +22,12 @@ self.addEventListener('install', event => {
 self.addEventListener('message', function (event) {
   if (event.data.action === 'skipWaiting') {
     self.skipWaiting();
+
+    // 2 secs delay, helps cache refresh ...
+    setTimeout(function(){
+            alert("I am setTimeout");
+       },2000); //delay is in milliseconds
+
   }
 });
 
