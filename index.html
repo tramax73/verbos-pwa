@@ -135,7 +135,7 @@ function closeNav() {
                 // new update available
 
                 // clear cache first
-                setTimeout(() => document.location.reload(true), 2000);
+                // setTimeout(() => document.location.reload(true), 2000);
                 caches.keys().then(keys => {
                   keys.forEach(key => caches.delete(key));
                 });
