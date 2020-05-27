@@ -47,4 +47,4 @@ self.addEventListener('fetch', function (event) {
 
 
 // VERSION: 1.3 bet
-const buildNo ='155';
+const buildNo="155";
