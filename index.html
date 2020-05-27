@@ -133,6 +133,14 @@ function closeNav() {
             case 'installed':
               if (navigator.serviceWorker.controller) {
                 // new update available
+
+                // clear cache first
+            //    setTimeout(() => document.location.reload(true), 2000);
+            //    caches.keys().then(keys => {
+            //      keys.forEach(key => caches.delete(key));
+            //    }
+
+                // show update toast
                 showUpdateBar();
               }
               // No update available
@@ -145,7 +153,10 @@ function closeNav() {
     let refreshing;
     navigator.serviceWorker.addEventListener('controllerchange', function () {
       if (refreshing) return;
-      window.location.reload();
+
+      // window.location.reload();
+      setTimeout(() => document.location.reload(true), 2000);
+      
       refreshing = true;
     });
   }

@@ -25,8 +25,8 @@ self.addEventListener('message', function (event) {
 
     // 2 secs delay, helps cache refresh ...
     setTimeout(function(){
-            console.log('timeout 2 secs');
-       },2000); //delay is in milliseconds
+            console.log('skipWaiting triggered');
+       },500); //delay is in milliseconds
 
   }
 });
