@@ -1,4 +1,12 @@
-## Welcome to GitHub Pages
+## Verbos PWA
+
+Este es mi primera PWA.
+
+De hacer:
+- "persistance" (por iOS)
+- "swipe control" (para cerrar el menu)
+- mejorar la UX
+- mejorar el algoritmo de clasificación aleatoria de los verbos  
 
 You can use the [editor on GitHub](https://github.com/tramax73/verbos-pwa/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
