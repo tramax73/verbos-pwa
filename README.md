@@ -1,4 +1,5 @@
 ## Verbos PWA
+### versión 1.3
 
 Este es mi primera PWA.
 
@@ -6,28 +7,19 @@ De hacer:
 - "persistance" (por iOS)
 - "swipe control" (para cerrar el menu)
 - mejorar la UX
+- mejorar la "accesibilidad" ( _Lighthouse_ )
 - mejorar el algoritmo de clasificación aleatoria de los verbos  
 
-You can use the [editor on GitHub](https://github.com/tramax73/verbos-pwa/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+- otro
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+______________ ORIGINAL MD FILE DESCRIPTION ______________
+
 
 ### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
 
 **Bold** and _Italic_ and `Code` text
 
