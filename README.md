@@ -1,16 +1,21 @@
 ## Verbos PWA
 ### versión 1.3
 
-Este es mi primera PWA.
+Esta es mi primera PWA.
+La App permite experimentar tu conoscimientos de la conjugación de algunos verbos en los tiempos presente, pretérito imperfecto, pretérito indefinido.
+
+La aplicación está destinada a ayudar los que estudian español en nivel básico.  
 
 De hacer:
 - "persistance" (por iOS)
-- "swipe control" (para cerrar el menu)
-- mejorar la UX
-- mejorar la "accesibilidad" ( _Lighthouse_ )
+- "swipe control" (para cerrar el menú)
+- mejorar UX y la "accesibilidad" ( _Lighthouse_ )
 - mejorar el algoritmo de clasificación aleatoria de los verbos  
 
-- otro
+- varios ...
+
+
+URL: [Verbos-PWA sobre GitHub](https://tramax73.github.io/verbos-pwa/)
 
 ______________ ORIGINAL MD FILE DESCRIPTION ______________
 
