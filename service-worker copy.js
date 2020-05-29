@@ -1,4 +1,4 @@
-var cacheName = 'verbos-pwa';
+var cacheName = 'verbos-pwa'; 
 var filesToCache = [
   '/verbos-pwa/',
   '/verbos-pwa/manifest.json',

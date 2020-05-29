@@ -1,5 +1,5 @@
 window.onload = () => {
-  'use strict';
+  'use strict'; 
 
   let installingWorker;
 
